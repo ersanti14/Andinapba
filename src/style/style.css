@@ -1,0 +1,1219 @@
+@import url('https://fonts.cdnfonts.com/css/florania-trial?styles=86890');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.contPricipal {
+    background-color: #def8ff;
+    width: 100%;
+    height: max-content;
+    display: grid;
+    flex-direction: row;
+    grid-template: "header" 70px
+        "contend" auto
+        "contac" auto
+        "contPie" 200px/
+        100%;
+}
+
+.header {
+    grid-area: header;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: aliceblue;
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    border-bottom: 2px solid #006780;
+}
+
+.contend {
+    grid-area: contend;
+    width: 100%;
+    height: auto;
+}
+
+.contCabecera {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template: "empty-1 box1 empty-2 box2 box3 box4 box5 box6 empty-3" 100%/
+        3% 25% 1fr 80px 120px 105px 100px 105px 3%;
+}
+
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    height: 22.112px;
+}
+
+.textoCabecera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.textC {
+    text-decoration: none;
+    list-style: none;
+    color: #0D1C26;
+    font-weight: 600;
+}
+
+.hoverCabezera:hover {
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.05em;
+    padding-bottom: 17.8px;
+    border-bottom: 0.208vw solid #1C4D65;
+    transition: padding-bottom 0.2s;
+}
+
+.box1 {
+    grid-area: box1;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logoAndina {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 40px;
+    padding-left: 10px;
+    border-left: 1px solid black;
+}
+
+.imgLogo {
+    width: 100%;
+    height: 100%;
+}
+
+.logoAsegacar {
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: auto;
+    padding-right: 10px;
+}
+
+.box2 {
+    grid-area: box2;
+}
+
+.box3 {
+    grid-area: box3;
+}
+
+.box4 {
+    grid-area: box4;
+}
+
+.box5 {
+    grid-area: box5;
+}
+
+.box6 {
+    grid-area: box6;
+}
+
+/* CSS VISTA PRINCIPAL */
+
+.sliderContend {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.sliderTxt {
+    width: 90%;
+    height: 100%;
+    z-index: 28;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.contxtInicial {
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    display: flex;
+    align-items: justify;
+    justify-content: center;
+}
+
+.contSlider {
+    z-index: 24;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.decHeader {
+    top: 0;
+    z-index: 28;
+    position: absolute;
+    width: 100%;
+}
+
+.decBottom {
+    z-index: 28;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.textInicioP {
+    font-family: 'Florania Trial', sans-serif;
+    font-size: 4.5em;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    text-shadow: -3px 0px rgb(0, 103, 128);
+    font-weight: 600;
+}
+
+.textContInicio {
+    width: auto;
+    max-width: 650px;
+    height: auto;
+    color: rgb(238, 253, 255);
+    font-family: 'Florania Trial';
+    font-weight: 900;
+    font-size: 1.3em;
+    line-height: 20px;
+}
+
+.BtnInicio {
+    width: 350px;
+    height: 45px;
+    background-color: #1C4D65;
+    list-style: none;
+    text-decoration: none;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Florania Trial', sans-serif;
+    color: rgb(240, 248, 255);
+    font-weight: 600;
+    gap: 5px;
+    font-size: 1.3em;
+}
+
+.BtnInicio:hover {
+    background-color: #2c6a89;
+}
+
+/* COBTENDIDO NUESTRA EMPRESA */
+.DecNovedades2 {
+    grid-area: DecNovedades;
+    z-index: 28;
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.divNuevaPlanta {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: #def8ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contNuevaPlanta {
+    padding-top: 60px;
+    width: 98%;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.tituNuevaPlanta {
+    color: #173244;
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Florania Trial', sans-serif;
+}
+.tituNuevaPlantaUbicacion {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Florania Trial', sans-serif;
+}
+
+.cont1NP {
+    display: flex;
+    padding: 10px 0px 30px 0px;
+    flex-direction: row;
+    height: max-content;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+.txtNuevaP {
+    width: auto;
+    max-width: 600px;
+    margin: 10px;
+    font-size: 1em;
+    height: auto;
+}
+
+.contImgInc {
+    display: flex;
+    width: auto;
+    height: auto;
+    max-height: 230px;
+    max-width: 500px;
+    
+}
+
+.ImgContNp {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 5px 0px 18px 5px rgba(128, 128, 128, 0.466);
+}
+
+.conAsiVamos {
+    width: 100%;
+    height: 350px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Agrega esto en tu archivo CSS */
+.slider-container {
+    width: 96%;
+    height: 320px;
+    display: block;
+    margin: 0 auto;
+    opacity: 0;
+    transition: opacity .3s ease-out, transform 0.3s ease-out;
+    transform: translateY(-100px);
+}
+.slider-container.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+.slick-prev:before, .slick-next:before {
+    color: #1d5b5b !important;
+    font-size: 25px !important;
+}
+
+.contBoxCarts {
+    height: 320px;
+    width: 100%;
+    background-color: #006780;
+    display: flex;
+    border: 2px solid rgb(106, 106, 106);
+    border-radius: 13px;
+}
+
+.boxCardsP {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    gap: 5px;
+    grid-template: "atributosT"30px
+                    "boxImgCards"150px
+                    "pieCards"145px/
+                    100%;
+
+}
+
+.boxImgCards {
+    position: relative;
+    grid-area: boxImgCards;
+    display: flex;
+    width: 100%;
+    height: 150px;
+    cursor: pointer;
+}
+
+.boxImgCardsHover{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.353);
+    width: 100%;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    transition: all ease-in-out 0.3s;
+}
+
+.boxImgCardsHover:hover{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.226);
+    width: 100%;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+}
+
+.atributosT{
+    grid-area: atributosT;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #ddf4ff;
+    margin: 0;
+    padding: 0;
+}
+
+.pieCards{
+    grid-area: pieCards;
+    width: 100% ;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.punto {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.boxTextCards{
+    font-size: 1.02em;
+    align-items:stretch;
+    width: 95%;
+    height: 100%;
+}
+.texCards{
+    color: aliceblue;
+
+}
+
+.slider-container .slick-slide {
+    padding: 0 5px;
+}
+
+.slider-container .slick-slide img {
+    display: block;
+    margin: 0 auto;
+}
+/* /////////////////Nuestra Proyeccion */
+
+.nuestraProyeccion {
+    width: 95%;
+    height: auto;
+    max-height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contNustraP{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display:grid;
+    gap: 25px;
+    grid-template: "boxNuestraP1 boxNuestraP2"1fr
+                    "boxNuestraP3 boxNuestraP4"1fr/
+                            1fr 1fr
+}
+
+.boxNuestraP1{
+    grid-area: boxNuestraP1;
+}
+.boxNuestraP2{
+    grid-area: boxNuestraP2;
+}
+.boxNuestraP3{
+    grid-area: boxNuestraP3;
+}
+.boxNuestraP4{
+    grid-area: boxNuestraP4;
+}
+
+.proyeccionGrid {
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: opacity .3s ease-out, transform 0.3s ease-out;
+    display: grid;
+    grid-template: 
+      "proyeccionTitulo proyeccionTitulo" 50px
+      "proyeccionText proyeccionText" auto
+       "proyeccionImg proyeccionImg" max-content / 
+      1fr;
+  }
+  
+  .proyeccionGrid.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+  .proyeccionTitulo{
+    grid-area: proyeccionTitulo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .borderNuestraP{
+    position: absolute;
+    height: 2px;
+    width: 25%;
+    bottom: 10px;
+    right: 0;
+    background-color: #006780;
+  }
+
+  .proyeccionText{
+    grid-area: proyeccionText;
+    display: flex;
+  }
+
+  .proyeccionImg{
+    display: flex;
+    align-items: center;
+    grid-area: proyeccionImg;
+    width: auto;
+    height: min-content;
+    justify-content: center;
+  }
+
+  .ImgProyeccion{
+    width: auto;
+    height: 250px;
+  }
+
+  .tituNuestraProyeccion{
+    margin: 0;
+    padding: 0;
+    color: #173244;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Florania Trial', sans-serif;
+  }
+
+.contUbicacion{
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(-100px);
+}
+.contUbicacion.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+.devDecoracion1{
+    position: relative;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    rotate: 180deg;
+  }
+
+  .devDecoracion2{
+    position: relative;
+    bottom: 0;
+    width: auto;
+    height: auto;
+  }
+  
+
+.contNuestraUbicacion {
+    background-color: #006780;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+}
+
+
+.iconMapa{
+    margin-top: 25px;
+    width: 390px;
+    height: 390px;
+    position: absolute;
+    left: 70%;
+    z-index: 5;
+    opacity: .6;
+    overflow: hidden;
+}
+
+.decoracionUbicacion{
+    position: absolute;
+    height: 2px;
+    width: 40%;
+    top: 45px;
+    right: 0;
+    background-color:aliceblue;
+}
+
+.boxCajaMapa {
+    width: auto;
+    height: min-content;
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxtextoMapa {
+    width: 40%;
+    height: auto;
+}
+
+.texMapaUbi {
+    color: aliceblue;
+    text-align:left;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+
+/* ////////////////CONNOVEDAESA U SERVICIOS/////////////////////// */
+.boxServicios{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.cajaServicios{
+    width: 85%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.boxTitulosServicios{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    gap: 10px;
+    font-weight: 400;
+    color: #173244;
+    font-family: 'Florania Trial', sans-serif;
+}
+
+.boxServicosCont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;    
+    height: auto;
+    position: relative;
+}
+
+.textServicios{
+    display: flex;
+    width: 45%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+.DecServicios{
+    width: 30%;
+    height: 2px;
+    position: absolute;
+    bottom: 25%;
+    right: 0;
+    background-color: #00668086;
+}
+
+.ImgServicios{
+    height: 150px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ////////////////CONNOVEDAESA U SERVICIOS/////////////////////// */
+.contNovedades {
+    width: 100%;
+    height: 100dvh;
+    display: grid;
+    align-content: center;
+    color: white;
+    justify-content: center;
+    grid-template: "headerNovedades headerNovedades headerNovedades" 15%
+        "multiNovedades empty-1 textNovedades" 60%/
+        42% 5% 42%;
+}
+
+.headerNovedades {
+    grid-area: headerNovedades;
+    background-color: #006780;
+    border-radius: 12px 12px 0 0;
+    display: grid;
+    align-items: center;
+    grid-template: "empty-1 tituloNovedades fechaNovedades" 100%/
+        1fr 2fr 1fr;
+}
+
+.tituloNovedades {
+    grid-area: tituloNovedades;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.fechaNovedades {
+    grid-area: fechaNovedades;
+    align-items: center;
+    justify-content: right;
+    display: flex;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 15px;
+}
+
+.multiNovedades {
+    grid-area: multiNovedades;
+    background-color: rgb(187, 186, 186);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+}
+
+.imgNovedades {
+    width: 100%;
+}
+
+.textNovedades {
+    display: flex;
+    background-color: rgb(187, 186, 186);
+    grid-area: textNovedades;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.boxTexto {
+    text-align: justify;
+    padding: 0px 15px 0px 15px;
+}
+
+.contPie {
+    grid-area: contPie;
+    width: 100%;
+    height: 100%;
+    background-color: #0D1C26;
+}
+
+@font-face {
+    font-family: 'Rafflesia-Demo';
+    src: url('./fonts/Rafflesia-Demo.ttf');
+    font-weight: bold;
+}
+
+/* ///////////////////////css pag Vision/////////////////////*/
+
+.contNosotros {
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 10;
+    flex-direction: column;
+}
+
+.contPNovedades {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: #ddf4ff;
+}
+
+.bobinos {
+    position: absolute;
+    width: 100%;
+    height: max-content;
+    z-index: 5;
+}
+
+.bobinosFondo {
+    width: 100%;
+    opacity: 0.6;
+    height: auto;
+    mask-image: linear-gradient(transparent 1%,
+            rgb(0, 0, 0) 47%,
+            transparent 100%);
+}
+
+.slide-top {
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: slide-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+}
+
+@keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+}
+
+.tracking-in-contract {
+    -webkit-animation: tracking-in-contract 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-contract 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-contract {
+    0% {
+        letter-spacing: 0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        letter-spacing: normal;
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-contract {
+    0% {
+        letter-spacing: 0.3em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        letter-spacing: normal;
+        opacity: 1;
+    }
+}
+
+.contTitulo {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Florania Trial', sans-serif;
+
+}
+
+.tituloNosotros {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    line-height: 0;
+    font-weight: 600;
+    color: #0D1C26;
+}
+
+.boxNosotros {
+    justify-items: center;
+    display: grid;
+    gap: 4%;
+    grid-template: "empty-7 boxMision boxVision empty-10" auto
+        "empty-7 boxHistoria boxHistoria empty-10" auto/
+        2% 1fr 1fr 2%;
+
+}
+
+.segTitNosotros,
+.terTitNosotros {
+    margin: 0;
+    background-color: #e6f7ff00;
+    color: #006780;
+    font-size: 1.8em;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    font-family: 'Florania Trial', sans-serif;
+}
+
+
+.boxMision {
+    grid-area: boxMision;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    background-color: rgba(216, 216, 216, 0);
+}
+
+.contImgNosotros {
+    width: 80%;
+    height: auto;
+}
+
+.imgMision {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    margin-right: 3%;
+}
+
+.contImgNosotrosH {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 90%;
+    gap: 15px;
+    height: auto;
+}
+
+.imgMisionH {
+    width: 50%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.boxVision {
+    grid-area: boxVision;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    background-color: rgba(216, 216, 216, 0);
+}
+
+.texPNosotros {
+    color: #152733;
+    font-weight: 600;
+    font-size: 1.15em;
+    line-height: normal;
+    margin-left: 200px;
+    width: 90%;
+    height: 70%;
+}
+
+.slide-left {
+    -webkit-animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(-200px);
+        transform: translateX(-200px);
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+    }
+}
+
+.boxHistoria {
+    grid-area: boxHistoria;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 5% 0px 5%;
+}
+
+/* Contactenos css */
+
+.contactenos {
+    grid-area: contac;
+    width: 100%;
+    height: 250px;
+    display: grid;
+    align-items: center;
+    grid-template: "empty-23 boxContactenos boxRedes empty-22" 100%/
+        2fr 40% 35% 1fr;
+    background-color: #006780;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate {
+    opacity: 1;
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+
+.boxContactenos {
+    width: 100%;
+    height: 100%;
+    grid-area: boxContactenos;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.boxRedes {
+    grid-area: boxRedes;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.btn-color {
+    background-color: #0D1C26;
+    color: #e6f7ff;
+}
+
+.btn-color:hover {
+    color: #e6f7ff;
+    background-color: #173244;
+    border: 1px solid aliceblue;
+}
+
+.tituloContacto {
+    font-family: 'Florania Trial', sans-serif;
+    color: aliceblue;
+    padding-right: 10px;
+    font-weight: 600;
+    font-size: 2em;
+    margin: 0;
+}
+
+.boxWhatsapp{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.boxWhatsapp.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+.contTituRedes {
+    display: flex;
+    width: auto;
+    justify-content: justify;
+    height: 100%;
+}
+
+.tituRedes {
+    font-size: 1.8em;
+    margin: 0;
+    font-family: 'Florania Trial', sans-serif;
+    color: aliceblue;
+}
+
+.redesSociales {
+    width: 200px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template: "redes1" 45px
+        "redes2" 45px
+        "redes3" 45px
+        "redes4" 45px/
+        100%;
+}
+
+.red {
+    display: flex;
+    width: 100%;
+    height: max-content;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+.contRed {
+    width: 100%;
+    height: min-content;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.contImgRed {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+.contImgRed.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+.boxImgRed {
+    width: 30px;
+    height: 30px;
+}
+
+.texRedes {
+    color: aliceblue;
+    font-size: 1em;
+    display: flex;
+    margin: 0;
+}
+
+.texRedes:hover {
+    color: rgba(255, 255, 255, 0.411);
+}
+
+.contTxtRed {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.redes1 {
+    grid-area: redes1;
+}
+
+.redes2 {
+    grid-area: redes2;
+}
+
+.redes3 {
+    grid-area: redes3;
+}
+
+.redes4 {
+    grid-area: redes4;
+}
+
+.boxImgRed:hover {
+    width: 35px;
+    height: 35px;
+}
+
+.imgRedes {
+    width: 100%;
+    height: 100%;
+}

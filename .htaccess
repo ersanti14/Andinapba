@@ -1,0 +1,24 @@
+# Use PHP engine
+AddHandler application/x-httpd-php80 .php
+
+# Enable rewrite engine and route requests to index.html
+RewriteEngine On
+RewriteBase /
+
+# Don't rewrite requests for actual files or directories
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Rewrite all other requests to index.html
+RewriteRule ^ index.html [L]
+
+# Serve JavaScript files with the correct MIME type
+<FilesMatch "\.js$">
+    AddType application/javascript .js
+</FilesMatch>
+
+# Serve CSS files with the correct MIME type
+<FilesMatch "\.css$">
+    AddType text/css .css
+</FilesMatch>

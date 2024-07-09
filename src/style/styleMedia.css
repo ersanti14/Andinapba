@@ -1,0 +1,159 @@
+@media screen and (min-width: 200px) and (max-width: 1060px) {
+    .sliderContend {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
+    .slider {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+        background-color: rgba(30, 72, 80, 0.647);
+    }
+
+    .imgSliderInc{
+        width: 100%;
+        height: auto;
+    }
+    .cont1NP {
+        display: flex;
+        padding: 10px 0px 30px 0px;
+        flex-direction: column !important;
+        height: max-content;
+        width: 100%;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .textInicioP{
+        font-size: 3.5em;
+    }    
+    .contNustraP{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display:grid;
+        gap: 0px;
+        grid-template: "boxNuestraP1" 1fr
+                        "boxNuestraP2"1fr
+                        "boxNuestraP3"1fr
+                        "boxNuestraP4"1fr/
+                             1fr
+    }
+
+    .slider-container {
+        width: 88%;
+    }
+    .tituNuestraProyeccion{
+        font-size: 1.36em;
+    }
+
+    .contPricipal {
+        background-color: #def8ff;
+        width: 100%;
+        height: max-content;
+        display: grid;
+        flex-direction: row;
+        grid-template: "header" 70px
+            "contend" auto
+            "contac" auto
+            "contPie" 200px/
+            100%;
+    }
+
+    .contactenos {
+        grid-area: contac;
+        width: 100%;
+        height: max-content;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template: "boxContactenos"max-content  
+                        "boxRedes" max-content/
+                             1fr;
+    }
+
+    .redesSociales {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template: "redes1 redes2 redes3 redes4" 45px/
+                            auto auto auto auto     
+         
+    }
+
+    .contTituRedes {
+        display: flex;
+        width: auto;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .contTxtRed {
+        width: max-content;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+}
+@media (max-width: 930px) {
+    .form-control-lg {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+  
+  @media (min-width: 930px) {
+    .form-control-lg {
+      font-size: 1.25rem;
+      padding: 0.75rem 1.25rem;
+    }
+  }
+  @media screen and (min-width: 200px) and (max-width: 900px){
+    .boxCajaMapa {
+        flex-direction: column-reverse;
+    }
+    .boxtextoMapa {
+        width: 80%;
+        height: auto;
+    }
+    .texMapaUbi {
+        font-size: 1.5em;
+        color: rgb(255, 253, 253);
+    }
+    .iconMapa {
+        left: 60%;
+    }
+  }
+
+@media screen and (min-width: 100px) and (max-width: 700px){
+    .textInicioP{
+        font-size: 2.7em;
+    } 
+    .textContInicio{
+        font-size: 1em;
+    }
+
+    .ImgProyeccion{
+        width: auto;
+        height: 200px !important;
+      }
+}
+
+@media screen and (min-width: 200px) and (max-width: 440px) {
+    .tituNuevaPlanta{
+        font-size: 1.5em;
+    }
+
+    .ImgProyeccion{
+        width: auto;
+        height: 160px !important;
+      }
+    
+}
