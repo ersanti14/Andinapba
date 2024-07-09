@@ -1,0 +1,6 @@
+# Archivos grandes ignorados por Git LFS
+*.MP4
+*.node
+
+# Directorio node_modules (solo si no estás usando Git LFS para gestionar node_modules)
+node_modules/
