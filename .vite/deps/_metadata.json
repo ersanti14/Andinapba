@@ -1,0 +1,70 @@
+{
+  "hash": "4fd81dc5",
+  "configHash": "bb7f1d3f",
+  "lockfileHash": "fbfa958c",
+  "browserHash": "488748c8",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "02b54045",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "13874b6f",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "3dc6bb4e",
+      "needsInterop": false
+    },
+    "bootstrap/dist/js/bootstrap.js": {
+      "src": "../../node_modules/bootstrap/dist/js/bootstrap.js",
+      "file": "bootstrap_dist_js_bootstrap__js.js",
+      "fileHash": "dcabae40",
+      "needsInterop": true
+    },
+    "react-intersection-observer": {
+      "src": "../../node_modules/react-intersection-observer/index.mjs",
+      "file": "react-intersection-observer.js",
+      "fileHash": "36eb12b0",
+      "needsInterop": false
+    },
+    "classnames": {
+      "src": "../../node_modules/classnames/index.js",
+      "file": "classnames.js",
+      "fileHash": "ac165efe",
+      "needsInterop": true
+    },
+    "react-scroll": {
+      "src": "../../node_modules/react-scroll/modules/index.js",
+      "file": "react-scroll.js",
+      "fileHash": "67c4297a",
+      "needsInterop": true
+    },
+    "react-slick": {
+      "src": "../../node_modules/react-slick/lib/index.js",
+      "file": "react-slick.js",
+      "fileHash": "36ddd766",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-UFH4GM3I": {
+      "file": "chunk-UFH4GM3I.js"
+    },
+    "chunk-6JVWYHVC": {
+      "file": "chunk-6JVWYHVC.js"
+    },
+    "chunk-ENLXLVXR": {
+      "file": "chunk-ENLXLVXR.js"
+    },
+    "chunk-CEQRFMJQ": {
+      "file": "chunk-CEQRFMJQ.js"
+    }
+  }
+}
