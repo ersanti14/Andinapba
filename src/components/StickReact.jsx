@@ -54,7 +54,7 @@ const images = [
 const SliderAuto = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const [ref1, inView1] = useInView({ threshold: 0.1 });
+  const [ref1, inView1] = useInView({ threshold: 0 });
 
   const settings = {
     centerMode: true,

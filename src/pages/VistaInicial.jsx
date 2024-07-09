@@ -158,12 +158,12 @@ export const VistaInicial = () => {
             </div>
           </div>
         </div>
-        <div className="devDecoracion2">
+        <div className="devDecoracion2" id="boxServicios">
           <DecTop />
         </div>
       </div>
 
-      <div className="boxServicios">
+      <div className="boxServicios" id="boxServicios">
         <Servicios />
       </div>
       {/* <div className="contNovedades">

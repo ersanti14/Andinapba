@@ -28,6 +28,9 @@
         justify-content: center;
         align-items: center;
     }
+    .txtNuevaP{
+        line-height: 20px;
+    }
     .textInicioP{
         font-size: 3.5em;
     }    
@@ -36,11 +39,11 @@
         width: 100%;
         height: 100%;
         display:grid;
-        gap: 0px;
-        grid-template: "boxNuestraP1" 1fr
-                        "boxNuestraP2"1fr
-                        "boxNuestraP3"1fr
-                        "boxNuestraP4"1fr/
+        gap: 10px;
+        grid-template: "boxNuestraP1"min-content
+                        "boxNuestraP2"min-content
+                        "boxNuestraP3"min-content
+                        "boxNuestraP4"min-content/
                              1fr
     }
 

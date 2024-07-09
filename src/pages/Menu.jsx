@@ -25,6 +25,11 @@ export const Menu = () => {
       scroll.scrollToTop({ smooth: true, duration: 400 });
     }
   };
+  const handleClick2 = () => {
+    if (location.pathname === "/nosotros") {
+      scroll.scrollToTop({ smooth: true, duration: 400 });
+    }
+  };
 
   const handleInputChange = (e) => {
     setMessage(e.target.value);
@@ -98,9 +103,14 @@ export const Menu = () => {
             </div>
             <div className="box4">
               <li className="textoCabecera hoverCabezera">
-                <Link to="/" className="textC">
+                <ScrollLink
+                to="boxServicios"
+                smooth={true}
+                duration={400}
+                className="textC"
+                >
                   Servicios
-                </Link>
+                </ScrollLink>
               </li>
             </div>
             <div className="box5">

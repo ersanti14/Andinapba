@@ -267,6 +267,7 @@ html {
     font-weight: 600;
     font-family: 'Florania Trial', sans-serif;
 }
+
 .tituNuevaPlantaUbicacion {
     margin: 0;
     padding: 0;
@@ -278,21 +279,20 @@ html {
 
 .cont1NP {
     display: flex;
-    padding: 10px 0px 30px 0px;
+    padding: 10px 0px 20px 0px;
     flex-direction: row;
     height: max-content;
     width: 100%;
     height: auto;
-    gap: 10px;
     justify-content: center;
 }
 
 .txtNuevaP {
     width: auto;
     max-width: 600px;
-    margin: 10px;
+    margin: 5px 5px 5px 5px;
     font-size: 1em;
-    height: auto;
+    height: min-content;
 }
 
 .contImgInc {
@@ -301,7 +301,6 @@ html {
     height: auto;
     max-height: 230px;
     max-width: 500px;
-    
 }
 
 .ImgContNp {
@@ -320,7 +319,6 @@ html {
     align-items: center;
 }
 
-/* Agrega esto en tu archivo CSS */
 .slider-container {
     width: 96%;
     height: 320px;
@@ -330,12 +328,14 @@ html {
     transition: opacity .3s ease-out, transform 0.3s ease-out;
     transform: translateY(-100px);
 }
+
 .slider-container.animate {
     opacity: 1;
     transform: translateY(0);
-  }
+}
 
-.slick-prev:before, .slick-next:before {
+.slick-prev:before,
+.slick-next:before {
     color: #1d5b5b !important;
     font-size: 25px !important;
 }
@@ -354,10 +354,10 @@ html {
     width: 100%;
     display: grid;
     gap: 5px;
-    grid-template: "atributosT"30px
-                    "boxImgCards"150px
-                    "pieCards"145px/
-                    100%;
+    grid-template: "atributosT" 30px
+        "boxImgCards" 150px
+        "pieCards" 145px/
+        100%;
 
 }
 
@@ -370,7 +370,7 @@ html {
     cursor: pointer;
 }
 
-.boxImgCardsHover{
+.boxImgCardsHover {
     z-index: 2;
     position: absolute;
     display: flex;
@@ -385,7 +385,7 @@ html {
     transition: all ease-in-out 0.3s;
 }
 
-.boxImgCardsHover:hover{
+.boxImgCardsHover:hover {
     z-index: 2;
     position: absolute;
     display: flex;
@@ -399,7 +399,7 @@ html {
     font-weight: 500;
 }
 
-.atributosT{
+.atributosT {
     grid-area: atributosT;
     text-align: center;
     font-size: 1.3em;
@@ -409,9 +409,9 @@ html {
     padding: 0;
 }
 
-.pieCards{
+.pieCards {
     grid-area: pieCards;
-    width: 100% ;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -426,13 +426,15 @@ html {
     border-radius: 50%;
     margin-right: 8px;
 }
-.boxTextCards{
+
+.boxTextCards {
     font-size: 1.02em;
-    align-items:stretch;
+    align-items: stretch;
     width: 95%;
     height: 100%;
 }
-.texCards{
+
+.texCards {
     color: aliceblue;
 
 }
@@ -445,6 +447,7 @@ html {
     display: block;
     margin: 0 auto;
 }
+
 /* /////////////////Nuestra Proyeccion */
 
 .nuestraProyeccion {
@@ -456,27 +459,30 @@ html {
     align-items: center;
 }
 
-.contNustraP{
+.contNustraP {
     position: relative;
     width: 100%;
-    height: 100%;
-    display:grid;
-    gap: 25px;
-    grid-template: "boxNuestraP1 boxNuestraP2"1fr
-                    "boxNuestraP3 boxNuestraP4"1fr/
-                            1fr 1fr
+    height: min-content;
+    display: grid;
+    gap: 10px 70px;
+    grid-template: "boxNuestraP1 boxNuestraP2" min-content
+        "boxNuestraP3 boxNuestraP4" min-content/
+        1fr 1fr
 }
 
-.boxNuestraP1{
+.boxNuestraP1 {
     grid-area: boxNuestraP1;
 }
-.boxNuestraP2{
+
+.boxNuestraP2 {
     grid-area: boxNuestraP2;
 }
-.boxNuestraP3{
+
+.boxNuestraP3 {
     grid-area: boxNuestraP3;
 }
-.boxNuestraP4{
+
+.boxNuestraP4 {
     grid-area: boxNuestraP4;
 }
 
@@ -485,56 +491,57 @@ html {
     transform: translateY(-100px);
     transition: opacity .3s ease-out, transform 0.3s ease-out;
     display: grid;
-    grid-template: 
-      "proyeccionTitulo proyeccionTitulo" 50px
-      "proyeccionText proyeccionText" auto
-       "proyeccionImg proyeccionImg" max-content / 
-      1fr;
-  }
-  
-  .proyeccionGrid.animate {
+    grid-template:
+        "proyeccionTitulo proyeccionTitulo" 50px
+        "proyeccionText proyeccionText" min-content
+        "proyeccionImg proyeccionImg" max-content / 1fr;
+}
+
+.proyeccionGrid.animate {
     opacity: 1;
     transform: translateY(0);
-  }
+}
 
 
-  .proyeccionTitulo{
+.proyeccionTitulo {
     grid-area: proyeccionTitulo;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-  }
+}
 
-  .borderNuestraP{
+.borderNuestraP {
     position: absolute;
     height: 2px;
     width: 25%;
     bottom: 10px;
     right: 0;
     background-color: #006780;
-  }
+}
 
-  .proyeccionText{
+.proyeccionText {
     grid-area: proyeccionText;
     display: flex;
-  }
+}
 
-  .proyeccionImg{
+.proyeccionImg {
     display: flex;
     align-items: center;
     grid-area: proyeccionImg;
     width: auto;
     height: min-content;
     justify-content: center;
-  }
+}
 
-  .ImgProyeccion{
+.ImgProyeccion {
     width: auto;
     height: 250px;
-  }
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
 
-  .tituNuestraProyeccion{
+.tituNuestraProyeccion {
     margin: 0;
     padding: 0;
     color: #173244;
@@ -542,9 +549,9 @@ html {
     text-align: center;
     font-weight: 600;
     font-family: 'Florania Trial', sans-serif;
-  }
+}
 
-.contUbicacion{
+.contUbicacion {
     width: 100%;
     height: auto;
     display: flex;
@@ -553,13 +560,14 @@ html {
     opacity: 0;
     transform: translateY(-100px);
 }
+
 .contUbicacion.animate {
     opacity: 1;
     transform: translateY(0);
-  }
+}
 
 
-.devDecoracion1{
+.devDecoracion1 {
     position: relative;
     top: 0;
     width: 100%;
@@ -567,15 +575,15 @@ html {
     padding: 0;
     height: auto;
     rotate: 180deg;
-  }
+}
 
-  .devDecoracion2{
+.devDecoracion2 {
     position: relative;
     bottom: 0;
     width: auto;
     height: auto;
-  }
-  
+}
+
 
 .contNuestraUbicacion {
     background-color: #006780;
@@ -591,7 +599,7 @@ html {
 }
 
 
-.iconMapa{
+.iconMapa {
     margin-top: 25px;
     width: 390px;
     height: 390px;
@@ -602,13 +610,13 @@ html {
     overflow: hidden;
 }
 
-.decoracionUbicacion{
+.decoracionUbicacion {
     position: absolute;
     height: 2px;
     width: 40%;
     top: 45px;
     right: 0;
-    background-color:aliceblue;
+    background-color: aliceblue;
 }
 
 .boxCajaMapa {
@@ -627,7 +635,7 @@ html {
 
 .texMapaUbi {
     color: aliceblue;
-    text-align:left;
+    text-align: left;
     font-size: 2em;
     font-weight: 700;
     font-family: sans-serif;
@@ -635,7 +643,7 @@ html {
 
 
 /* ////////////////CONNOVEDAESA U SERVICIOS/////////////////////// */
-.boxServicios{
+.boxServicios {
     width: 100%;
     height: max-content;
     display: flex;
@@ -643,7 +651,7 @@ html {
     position: relative;
 }
 
-.cajaServicios{
+.cajaServicios {
     width: 85%;
     height: auto;
     display: flex;
@@ -652,7 +660,7 @@ html {
     flex-direction: column;
 }
 
-.boxTitulosServicios{
+.boxTitulosServicios {
     width: 100%;
     height: auto;
     text-align: center;
@@ -662,24 +670,25 @@ html {
     font-family: 'Florania Trial', sans-serif;
 }
 
-.boxServicosCont{
+.boxServicosCont {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-    width: 100%;    
+    width: 100%;
     height: auto;
     position: relative;
 }
 
-.textServicios{
+.textServicios {
     display: flex;
     width: 45%;
     height: auto;
     flex-direction: column;
     align-items: center;
 }
-.DecServicios{
+
+.DecServicios {
     width: 30%;
     height: 2px;
     position: absolute;
@@ -688,7 +697,7 @@ html {
     background-color: #00668086;
 }
 
-.ImgServicios{
+.ImgServicios {
     height: 150px;
     width: auto;
     display: flex;
@@ -1040,20 +1049,21 @@ html {
 
 @keyframes fadeIn {
     from {
-      opacity: 0;
-      transform: translateY(40px);
+        opacity: 0;
+        transform: translateY(40px);
     }
+
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  
-  .animate {
+}
+
+.animate {
     opacity: 1;
     animation: fadeIn 1s ease-out forwards;
-  }
-  
+}
+
 
 .boxContactenos {
     width: 100%;
@@ -1096,7 +1106,7 @@ html {
     margin: 0;
 }
 
-.boxWhatsapp{
+.boxWhatsapp {
     width: 40px;
     height: 40px;
     display: flex;
@@ -1108,7 +1118,7 @@ html {
 .boxWhatsapp.animate {
     opacity: 1;
     transform: translateY(0);
-  }
+}
 
 .contTituRedes {
     display: flex;
@@ -1163,10 +1173,11 @@ html {
     justify-content: center;
     opacity: 0;
 }
+
 .contImgRed.animate {
     opacity: 1;
     transform: translateY(0);
-  }
+}
 
 
 .boxImgRed {
