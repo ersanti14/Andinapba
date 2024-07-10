@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Outlet, Link, useLocation } from "react-router-dom";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import LogoAndina from "/logoAndina.png";
+import LogoTipo from "/logotipo.png"
 import LogoAsegacar from "/logoasegacar.png";
 import Instragam from "/instagram-1.512x512.png";
 import Facebook from "/facebook.512x512.png";
@@ -11,6 +12,7 @@ import "../style/style.css";
 import IconWhat from "../Icons/IconWhatsaap";
 import { useInView } from "react-intersection-observer";
 import classNames from "classnames";
+import MenuNav from "../Icons/IconMenu";
 
 export const Menu = () => {
   useEffect(() => {
@@ -62,16 +64,31 @@ export const Menu = () => {
     <>
       <div className="contPricipal">
         <div className="header">
+          <div className="contMenuNav">
+            <div className="conLogosPhone">
+              <div className="logoAsegacarPhone">
+                <img src={LogoAsegacar} style={{width: "100%", height: "100%"}} alt="" />
+              </div>
+              <div className="logoPbaPhone">
+                <img src={LogoTipo} style={{width: "100%", height: "100%"}} alt="" />
+              </div>
+            </div>
+            <div className="MenuNav" id="clickNav">
+              <MenuNav />
+            </div>
+          </div>
+
           <div className="contCabecera">
             <div className="box1">
               <div className="logoAsegacar">
                 <img className="imgLogo" alt="" src={LogoAsegacar} />
               </div>
-              <hr />
               <div className="logoAndina">
                 <img className="imgLogo" src={LogoAndina} alt="" />
               </div>
             </div>
+            <div className="logosMediaQ"></div>
+
             <div className="box2">
               <li className="textoCabecera hoverCabezera">
                 {location.pathname !== "/" ? (
@@ -104,10 +121,10 @@ export const Menu = () => {
             <div className="box4">
               <li className="textoCabecera hoverCabezera">
                 <ScrollLink
-                to="boxServicios"
-                smooth={true}
-                duration={400}
-                className="textC"
+                  to="boxServicios"
+                  smooth={true}
+                  duration={400}
+                  className="textC"
                 >
                   Servicios
                 </ScrollLink>
@@ -164,41 +181,40 @@ export const Menu = () => {
               </div>
             </div>
             <div className="input-group mb-3">
-  <input
-    type="text"
-    className="form-control form-control-l form-control-sm-md"
-    placeholder="Escribenos via WhatsApp"
-    aria-label="Recipient's username"
-    aria-describedby="button-addon2"
-    value={message}
-    onChange={handleInputChange}
-  />
-  <button
-    className="btn btn-color"
-    type="button"
-    id="button-addon2"
-    onClick={sendMessage}
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="27"
-      height="27"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"
-    >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M5 12l14 0" />
-      <path d="M13 18l6 -6" />
-      <path d="M13 6l6 6" />
-    </svg>
-  </button>
-</div>
-
+              <input
+                type="text"
+                className="form-control form-control-l form-control-sm-md"
+                placeholder="Escribenos via WhatsApp"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+                value={message}
+                onChange={handleInputChange}
+              />
+              <button
+                className="btn btn-color"
+                type="button"
+                id="button-addon2"
+                onClick={sendMessage}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="27"
+                  height="27"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M5 12l14 0" />
+                  <path d="M13 18l6 -6" />
+                  <path d="M13 6l6 6" />
+                </svg>
+              </button>
+            </div>
           </div>
           <div className="boxRedes">
             <div className="contTituRedes">

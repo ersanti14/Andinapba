@@ -80,8 +80,7 @@ export const VistaInicial = () => {
         >
           <DecBottom />
         </div>
-      </div>
-
+      </div>  
       <div className="divNuevaPlanta">
         <div className="DecNovedades2" style={{ overflow: "hidden" }}>
           <DecTop />

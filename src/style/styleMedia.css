@@ -6,6 +6,7 @@
         position: relative;
         justify-content: center;
     }
+
     .slider {
         position: relative;
         width: 100%;
@@ -14,10 +15,11 @@
         background-color: rgba(30, 72, 80, 0.647);
     }
 
-    .imgSliderInc{
+    .imgSliderInc {
         width: 100%;
         height: auto;
     }
+
     .cont1NP {
         display: flex;
         padding: 10px 0px 30px 0px;
@@ -28,29 +30,33 @@
         justify-content: center;
         align-items: center;
     }
-    .txtNuevaP{
+
+    .txtNuevaP {
         line-height: 20px;
     }
-    .textInicioP{
+
+    .textInicioP {
         font-size: 3.5em;
-    }    
-    .contNustraP{
+    }
+
+    .contNustraP {
         position: relative;
         width: 100%;
         height: 100%;
-        display:grid;
+        display: grid;
         gap: 10px;
-        grid-template: "boxNuestraP1"min-content
-                        "boxNuestraP2"min-content
-                        "boxNuestraP3"min-content
-                        "boxNuestraP4"min-content/
-                             1fr
+        grid-template: "boxNuestraP1" min-content
+            "boxNuestraP2" min-content
+            "boxNuestraP3" min-content
+            "boxNuestraP4" min-content/
+            1fr
     }
 
     .slider-container {
         width: 88%;
     }
-    .tituNuestraProyeccion{
+
+    .tituNuestraProyeccion {
         font-size: 1.36em;
     }
 
@@ -74,9 +80,8 @@
         display: grid;
         justify-content: center;
         align-items: center;
-        grid-template: "boxContactenos"max-content  
-                        "boxRedes" max-content/
-                             1fr;
+        grid-template: "boxContactenos" max-content "boxRedes" max-content/
+            1fr;
     }
 
     .redesSociales {
@@ -86,8 +91,7 @@
         justify-content: center;
         display: grid;
         grid-template: "redes1 redes2 redes3 redes4" 45px/
-                            auto auto auto auto     
-         
+            auto auto auto auto
     }
 
     .contTituRedes {
@@ -105,58 +109,193 @@
     }
 
 }
+
 @media (max-width: 930px) {
     .form-control-lg {
-      font-size: 1rem;
-      padding: 0.5rem 1rem;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
     }
-  }
-  
-  @media (min-width: 930px) {
+}
+
+@media (min-width: 930px) {
     .form-control-lg {
-      font-size: 1.25rem;
-      padding: 0.75rem 1.25rem;
+        font-size: 1.25rem;
+        padding: 0.75rem 1.25rem;
     }
-  }
-  @media screen and (min-width: 200px) and (max-width: 900px){
+}
+
+@media screen and (min-width: 200px) and (max-width: 900px) {
     .boxCajaMapa {
         flex-direction: column-reverse;
     }
+
     .boxtextoMapa {
         width: 80%;
         height: auto;
     }
+
     .texMapaUbi {
         font-size: 1.5em;
         color: rgb(255, 253, 253);
     }
+
     .iconMapa {
         left: 60%;
     }
-  }
+}
 
-@media screen and (min-width: 100px) and (max-width: 700px){
-    .textInicioP{
+@media screen and (min-width: 100px) and (max-width: 700px) {
+    .textInicioP {
         font-size: 2.7em;
-    } 
-    .textContInicio{
+    }
+
+    .textContInicio {
         font-size: 1em;
     }
 
-    .ImgProyeccion{
+    .ImgProyeccion {
         width: auto;
         height: 200px !important;
-      }
+    }
 }
 
 @media screen and (min-width: 200px) and (max-width: 440px) {
-    .tituNuevaPlanta{
+    .tituNuevaPlanta {
         font-size: 1.5em;
     }
 
-    .ImgProyeccion{
+    .ImgProyeccion {
         width: auto;
         height: 160px !important;
-      }
+    }
+
+}
+
+@media screen and (min-width: 100px) and (max-width: 800px) {
+    .header {
+        height: 70px;
+        max-height: 180px;
+        position: fixed;
+        width: 100%;
+        display: flex;
+        border: none;
+        border-bottom: 2px solid #006780;
+    }
+
+    .contCabecera {
+        top: 75px;
+        width: 200px;
+        height: min-content;
+        display: grid;
+        position: absolute;
+        right: 1%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+        border: 1px solid gray;
+        background-color: aliceblue;
+        grid-template:
+            "box2" 30px
+            "box3" 30px
+            "box4" 30px
+            "box5" 30px
+            "box6" 30px/
+            200px;
+    }
+
+    .box1 {
+        display: none;
+    }
+
+    .contMenuNav {
+        width: 98%;
+        height: 70px;
+        display: flex;
+        right: 1%;
+        position: absolute;
+        z-index: 20;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .conLogosPhone {
+        width: auto;
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .logoAsegacarPhone {
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: 100%;
+        padding-right: 8px;
+        margin-right: 5px;
+        border-right: 1px solid rgb(62, 62, 62);
+    }
+
+    .logoPbaPhone {
+        width: auto;
+        height: 100%;
+    }
+
+    .MenuNav {
+        display: flex;
+        position: relative;
+        width: 35px;
+        height: 35px;
+        color: #173244;
+        cursor: pointer;
+    }
+
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6 {
+        height: 100%;
+        width: 100%;
+    }
+
     
+
+    .hoverCabezera:hover{
+    cursor: pointer;
+    width: auto;
+    height: min-content;
+    padding-bottom: 0;
+    border-bottom: 0;
+    font-size: 1.05em;
+    align-items: center;
+    display: flex;
+    }
+
+
+
+    .textC {
+        text-decoration: none;
+        list-style: none;
+        color: #101a20;
+        width: 100%;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .textC:hover{
+        background-color: #006780;
+        color: aliceblue;
+        border-radius: 7px;
+        margin: 0;
+        padding: 0;
+    }
+
+    
+
+
+
 }

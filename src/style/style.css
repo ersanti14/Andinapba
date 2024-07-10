@@ -13,6 +13,7 @@ html {
 .contPricipal {
     background-color: #def8ff;
     width: 100%;
+    position: relative;
     height: max-content;
     display: grid;
     flex-direction: row;
@@ -39,6 +40,10 @@ html {
     grid-area: contend;
     width: 100%;
     height: auto;
+}
+
+.MenuNav, .conLogosPhone{
+    display: none;
 }
 
 .contCabecera {
@@ -73,6 +78,9 @@ html {
     font-weight: 600;
 }
 
+.hoverCabezera{
+    font-size: 1.05em;
+}
 .hoverCabezera:hover {
     cursor: pointer;
     width: 100%;
