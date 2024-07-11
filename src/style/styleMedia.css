@@ -163,12 +163,10 @@
     .tituNuevaPlanta {
         font-size: 1.5em;
     }
-
     .ImgProyeccion {
         width: auto;
         height: 160px !important;
     }
-
 }
 
 @media screen and (min-width: 100px) and (max-width: 800px) {
@@ -182,9 +180,16 @@
         border-bottom: 2px solid #006780;
     }
 
-    .contCabecera {
+    .contCabezeraMediaQuery2{
+        display: none;
+        
+        transition: all ease-in .2s;
+    }
+
+    .contCabezeraMediaQuery {
         top: 75px;
-        width: 200px;
+        max-width: 200px;
+        width: auto;
         height: min-content;
         display: grid;
         position: absolute;
@@ -194,6 +199,8 @@
         border-radius: 7px;
         border: 1px solid gray;
         background-color: aliceblue;
+        
+        transition: all ease-in .2s;
         grid-template:
             "box2" 30px
             "box3" 30px
@@ -216,6 +223,8 @@
         z-index: 20;
         justify-content: space-between;
         align-items: center;
+        
+        transition: all ease-in .2s;
     }
 
     .conLogosPhone {
@@ -240,6 +249,16 @@
         height: 100%;
     }
 
+    .contIconsNav {
+        display: flex;
+        position: relative;
+        width: 35px;
+        height: 35px;
+        color: #173244;
+        cursor: pointer;
+        
+        transition: all ease-in .2s;
+    }
     .MenuNav {
         display: flex;
         position: relative;
@@ -247,6 +266,30 @@
         height: 35px;
         color: #173244;
         cursor: pointer;
+        transition: all ease-in .2s;
+    }
+
+    .menuNav2{
+        display: none;
+        
+        transition: all ease-in .2s;
+    }
+
+    .menuNavClose2{
+        display: none;
+        
+        transition: all ease-in .2s;
+    }
+
+    .menuNavClose {
+        display: flex;
+        position: relative;
+        width: 35px;
+        height: 35px;
+        color: #173244;
+        cursor: pointer;
+        
+        transition: all ease-in .2s;
     }
 
     .box2,
@@ -258,20 +301,16 @@
         width: 100%;
     }
 
-    
-
-    .hoverCabezera:hover{
-    cursor: pointer;
-    width: auto;
-    height: min-content;
-    padding-bottom: 0;
-    border-bottom: 0;
-    font-size: 1.05em;
-    align-items: center;
-    display: flex;
+    .hoverCabezera:hover {
+        cursor: pointer;
+        width: auto;
+        height: min-content;
+        padding-bottom: 0;
+        border-bottom: 0;
+        font-size: 1.05em;
+        align-items: center;
+        display: flex;
     }
-
-
 
     .textC {
         text-decoration: none;
@@ -286,16 +325,9 @@
         padding: 0;
     }
 
-    .textC:hover{
+    .textC:hover {
         background-color: #006780;
         color: aliceblue;
         border-radius: 7px;
-        margin: 0;
-        padding: 0;
     }
-
-    
-
-
-
 }

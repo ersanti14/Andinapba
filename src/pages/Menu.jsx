@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Outlet, Link, useLocation } from "react-router-dom";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import LogoAndina from "/logoAndina.png";
-import LogoTipo from "/logotipo.png"
+import LogoTipo from "/logotipo.png";
 import LogoAsegacar from "/logoasegacar.png";
 import Instragam from "/instagram-1.512x512.png";
 import Facebook from "/facebook.512x512.png";
@@ -13,6 +13,7 @@ import IconWhat from "../Icons/IconWhatsaap";
 import { useInView } from "react-intersection-observer";
 import classNames from "classnames";
 import MenuNav from "../Icons/IconMenu";
+import MenuNavClose from "../Icons/IconMenuClose";
 
 export const Menu = () => {
   useEffect(() => {
@@ -32,6 +33,27 @@ export const Menu = () => {
       scroll.scrollToTop({ smooth: true, duration: 400 });
     }
   };
+
+  useEffect(() => {
+    let menuClosed = document.getElementById("menuClosed");
+    let menuSee = document.getElementById("menuNavSee");
+    let clickNav = document.getElementById("clickNav");
+    let menuNavSelect = document.getElementById("menuNav")
+    
+
+    clickNav.addEventListener("click", () => {
+
+      menuSee.classList.toggle("menuNav2");
+      menuSee.classList.toggle("menuNav");
+
+      menuNavSelect.classList.toggle("contCabezeraMediaQuery2")
+      menuNavSelect.classList.toggle("contCabezeraMediaQuery")
+      
+      menuClosed.classList.toggle("menuNavClose2");
+      menuClosed.classList.toggle("menuNavClose");
+     
+    });
+  }, []);
 
   const handleInputChange = (e) => {
     setMessage(e.target.value);
@@ -67,18 +89,31 @@ export const Menu = () => {
           <div className="contMenuNav">
             <div className="conLogosPhone">
               <div className="logoAsegacarPhone">
-                <img src={LogoAsegacar} style={{width: "100%", height: "100%"}} alt="" />
+                <img
+                  src={LogoAsegacar}
+                  style={{ width: "100%", height: "100%" }}
+                  alt=""
+                />
               </div>
               <div className="logoPbaPhone">
-                <img src={LogoTipo} style={{width: "100%", height: "100%"}} alt="" />
+                <img
+                  src={LogoTipo}
+                  style={{ width: "100%", height: "100%" }}
+                  alt=""
+                />
               </div>
             </div>
-            <div className="MenuNav" id="clickNav">
-              <MenuNav />
+            <div className="contIconsNav" id="clickNav">
+              <div className="menuNavClose2" id="menuClosed">
+                <MenuNavClose />
+              </div>
+              <div className="menuNav" id="menuNavSee">
+                <MenuNav />
+              </div>
             </div>
           </div>
 
-          <div className="contCabecera">
+          <div className="contCabecera  contCabezeraMediaQuery2" id="menuNav">
             <div className="box1">
               <div className="logoAsegacar">
                 <img className="imgLogo" alt="" src={LogoAsegacar} />

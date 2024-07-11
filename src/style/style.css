@@ -42,7 +42,7 @@ html {
     height: auto;
 }
 
-.MenuNav, .conLogosPhone{
+.MenuNav, .conLogosPhone, .menuNavClose, .contIconsNav{
     display: none;
 }
 
