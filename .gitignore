@@ -4,3 +4,4 @@
 
 # Directorio node_modules (solo si no estás usando Git LFS para gestionar node_modules)
 node_modules/
+dist/

@@ -139,6 +139,7 @@ export const VistaInicial = () => {
 
           <div className="boxCajaMapa">
             <iframe
+            className="tamMapaUbi"
               src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d996.9310298609576!2d-76.14937804931154!3d1.8564755723739481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1718638533565!5m2!1ses-419!2sco"
               width="350"
               height="250"
@@ -165,46 +166,7 @@ export const VistaInicial = () => {
       <div className="boxServicios" id="boxServicios">
         <Servicios />
       </div>
-      {/* <div className="contNovedades">
-        <div className="headerNovedades">
-          <div className="tituloNovedades">Actualidad Andina 001</div>
-          <div className="fechaNovedades">02/06/2024</div>
-        </div>
-        <div className="multiNovedades">
-          <div className="div1">
-            <VideoPlayer
-              src={videoSrc}
-              poster={posterSrc}
-              controls={true}
-              autoplay={false}
-              loop={false}
-              muted={false}
-            />
-          </div>
-        </div>
-        <div className="textNovedades">
-          <div className="boxTexto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            eligendi aliquam molestiae consequuntur neque reprehenderit
-            excepturi deleniti culpa totam. Laudantium, at? Optio enim
-            laudantium facilis temporibus odio exercitationem minima corrupti,
-            delectus alias, impedit a autem fugit harum voluptas aperiam dicta
-            voluptatem eos magni cupiditate in nesciunt? Quidem culpa nihil
-            reprehenderit porro, accusantium, voluptates illum dignissimos
-            accusamus rem error provident voluptatibus quis ullam. Est impedit
-            reprehenderit aliquid quibusdam. Dolor, voluptatem? At reiciendis
-            facilis eius suscipit! Magnam adipisci perspiciatis culpa ut
-            deleniti, minus voluptatibus tenetur delectus sint, dolor quam qui
-            praesentium vero a, vel exercitationem esse. Hic odio sapiente
-            veniam vitae enim aliquid est corrupti omnis vel placeat eaque,
-            facilis rerum aliquam quae ipsum dolor autem, laudantium sint eos
-            veritatis iste tenetur. Voluptates cum nisi obcaecati dolore odit
-            molestias quam voluptatum vitae aliquid fugit culpa assumenda eos
-            delectus sunt veniam repudiandae nam, perspiciatis quas, neque
-            adipisci. Corrupti cumque quibusdam molestias inventore molestiae!
-          </div>
-        </div>
-      </div> */}
+      
     </>
   );
 };

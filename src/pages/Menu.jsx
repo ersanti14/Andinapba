@@ -38,20 +38,17 @@ export const Menu = () => {
     let menuClosed = document.getElementById("menuClosed");
     let menuSee = document.getElementById("menuNavSee");
     let clickNav = document.getElementById("clickNav");
-    let menuNavSelect = document.getElementById("menuNav")
-    
+    let menuNavSelect = document.getElementById("menuNav");
 
     clickNav.addEventListener("click", () => {
-
       menuSee.classList.toggle("menuNav2");
       menuSee.classList.toggle("menuNav");
 
-      menuNavSelect.classList.toggle("contCabezeraMediaQuery2")
-      menuNavSelect.classList.toggle("contCabezeraMediaQuery")
-      
+      menuNavSelect.classList.toggle("contCabezeraMediaQuery2");
+      menuNavSelect.classList.toggle("contCabezeraMediaQuery");
+
       menuClosed.classList.toggle("menuNavClose2");
       menuClosed.classList.toggle("menuNavClose");
-     
     });
   }, []);
 
@@ -275,9 +272,9 @@ export const Menu = () => {
                         alt="Facebook"
                       />
                     </div>
-                  </div>
-                  <div className="contTxtRed">
-                    <span className="texRedes">Facebook</span>
+                    <div className="contTxtRed">
+                      <span className="texRedes">Facebook</span>
+                    </div>
                   </div>
                 </div>
               </Link>
@@ -300,9 +297,9 @@ export const Menu = () => {
                         alt="Instagram"
                       />
                     </div>
-                  </div>
-                  <div className="contTxtRed">
-                    <span className="texRedes">Instagram</span>
+                    <div className="contTxtRed">
+                      <span className="texRedes">Instagram</span>
+                    </div>
                   </div>
                 </div>
               </Link>
@@ -325,9 +322,9 @@ export const Menu = () => {
                         alt="Tiktok"
                       />
                     </div>
-                  </div>
-                  <div className="contTxtRed">
-                    <span className="texRedes">Tiktok</span>
+                    <div className="contTxtRed">
+                      <span className="texRedes">Tiktok</span>
+                    </div>
                   </div>
                 </div>
               </Link>
@@ -350,9 +347,9 @@ export const Menu = () => {
                         alt="Correo"
                       />
                     </div>
-                  </div>
-                  <div className="contTxtRed">
-                    <span className="texRedes">Correo</span>
+                    <div className="contTxtRed">
+                      <span className="texRedes">Correo</span>
+                    </div>
                   </div>
                 </div>
               </Link>

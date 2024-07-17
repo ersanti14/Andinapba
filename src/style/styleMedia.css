@@ -85,13 +85,15 @@
     }
 
     .redesSociales {
-        width: 100%;
+        width: auto;
         height: 100%;
         align-items: center;
         justify-content: center;
         display: grid;
+        margin: 0;
+        gap: 8px;
         grid-template: "redes1 redes2 redes3 redes4" 45px/
-            auto auto auto auto
+            110px  113px  86px  90px 
     }
 
     .contTituRedes {
@@ -107,7 +109,6 @@
         display: flex;
         align-items: center;
     }
-
 }
 
 @media (max-width: 930px) {
@@ -159,7 +160,7 @@
     }
 }
 
-@media screen and (min-width: 200px) and (max-width: 440px) {
+@media screen and (min-width: 100px) and (max-width: 450px) {
     .tituNuevaPlanta {
         font-size: 1.5em;
     }
@@ -167,6 +168,74 @@
         width: auto;
         height: 160px !important;
     }
+
+    .tituloContacto {
+        font-family: 'Florania Trial', sans-serif;
+        color: aliceblue;
+        padding-right: 10px;
+        font-weight: 600;
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    .redesSociales {
+        width: auto;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        margin: 0;
+        gap: 5px;
+        grid-template: "redes1 redes2 redes3 redes4" 45px/
+            86px  88px  66px  70px 
+    }
+
+    .boxImgRed {
+        width: 25px;
+        height: 25px;
+    }
+
+    .boxImgRed:hover {
+        width: 28px;
+        height: 28px;
+    }
+
+    .contImgRed {
+        width: auto;
+        height: 30px;
+        display: flex;
+        opacity: 0;
+        gap: 4px;
+        color:aliceblue;
+    }
+
+    .texRedes {
+        font-size: 0.8em;
+        display: flex;
+        margin: 0;
+    }
+
+    .tituRedes {
+        font-size: 1.6em;
+        margin: 0;
+        font-family: 'Florania Trial', sans-serif;
+        color: aliceblue;
+    }
+
+    .conAsiVamos {
+        width: 99%;
+        height: 350px;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tamMapaUbi{
+        width: 250px;
+        height: 200px;
+    }
+    
 }
 
 @media screen and (min-width: 100px) and (max-width: 800px) {
@@ -181,8 +250,7 @@
     }
 
     .contCabezeraMediaQuery2{
-        display: none;
-        
+        display: none; 
         transition: all ease-in .2s;
     }
 
@@ -223,7 +291,6 @@
         z-index: 20;
         justify-content: space-between;
         align-items: center;
-        
         transition: all ease-in .2s;
     }
 
@@ -252,12 +319,18 @@
     .contIconsNav {
         display: flex;
         position: relative;
-        width: 35px;
-        height: 35px;
+        width: 38px;
+        align-items: center;
+        justify-content: center;
+        height: 38px;
         color: #173244;
         cursor: pointer;
-        
+        border-radius: 120px;
         transition: all ease-in .2s;
+    }
+    
+    .contIconsNav:hover{
+        background-color: #b6bbbe73;
     }
     .MenuNav {
         display: flex;
@@ -271,13 +344,11 @@
 
     .menuNav2{
         display: none;
-        
         transition: all ease-in .2s;
     }
 
     .menuNavClose2{
         display: none;
-        
         transition: all ease-in .2s;
     }
 
@@ -288,7 +359,6 @@
         height: 35px;
         color: #173244;
         cursor: pointer;
-        
         transition: all ease-in .2s;
     }
 
@@ -329,5 +399,15 @@
         background-color: #006780;
         color: aliceblue;
         border-radius: 7px;
+    }
+
+    .cajaServicios {
+        width: 90%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-direction: column;
+        margin-bottom: 20px;
     }
 }

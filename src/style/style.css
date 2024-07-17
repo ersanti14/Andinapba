@@ -3,11 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: system-ui, -apple-system, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-html {
-    scroll-behavior: smooth;
+    font-family: system-ui, sans-serif;
 }
 
 .contPricipal {
@@ -32,7 +28,6 @@ html {
     background-color: aliceblue;
     position: fixed;
     z-index: 30;
-    top: 0;
     border-bottom: 2px solid #006780;
 }
 
@@ -117,9 +112,7 @@ html {
 .logoAsegacar {
     display: flex;
     width: auto;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
+    height: 45px;
     width: auto;
     padding-right: 10px;
 }
@@ -127,19 +120,15 @@ html {
 .box2 {
     grid-area: box2;
 }
-
 .box3 {
     grid-area: box3;
 }
-
 .box4 {
     grid-area: box4;
 }
-
 .box5 {
     grid-area: box5;
 }
-
 .box6 {
     grid-area: box6;
 }
@@ -160,7 +149,6 @@ html {
     z-index: 28;
     position: absolute;
     display: flex;
-    justify-content: center;
 }
 
 .contxtInicial {
@@ -209,20 +197,21 @@ html {
     height: auto;
     color: rgb(238, 253, 255);
     font-family: 'Florania Trial';
-    font-weight: 900;
+    font-weight: 700;
     font-size: 1.3em;
     line-height: 20px;
 }
 
 .BtnInicio {
-    width: 350px;
+    width: auto;
+    max-width: 350px;
     height: 45px;
     background-color: #1C4D65;
     list-style: none;
     text-decoration: none;
     border-radius: 12px;
     outline: none;
-    border: 1px solid aliceblue;
+    border: 2px solid aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -268,8 +257,6 @@ html {
 
 .tituNuevaPlanta {
     color: #173244;
-    margin: 0;
-    padding: 0;
     font-size: 2em;
     text-align: center;
     font-weight: 600;
@@ -319,7 +306,7 @@ html {
 }
 
 .conAsiVamos {
-    width: 100%;
+    width: 95% !important;
     height: 350px;
     padding-bottom: 30px;
     display: flex;
@@ -330,8 +317,7 @@ html {
 .slider-container {
     width: 96%;
     height: 320px;
-    display: block;
-    margin: 0 auto;
+    display: block;                 
     opacity: 0;
     transition: opacity .3s ease-out, transform 0.3s ease-out;
     transform: translateY(-100px);
@@ -366,7 +352,6 @@ html {
         "boxImgCards" 150px
         "pieCards" 145px/
         100%;
-
 }
 
 .boxImgCards {
@@ -410,17 +395,15 @@ html {
 .atributosT {
     grid-area: atributosT;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 700;
     color: #ddf4ff;
-    margin: 0;
-    padding: 0;
 }
 
 .pieCards {
     grid-area: pieCards;
     width: 100%;
-    height: 100%;
+    height: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -440,11 +423,7 @@ html {
     align-items: stretch;
     width: 95%;
     height: 100%;
-}
-
-.texCards {
     color: aliceblue;
-
 }
 
 .slider-container .slick-slide {
@@ -463,8 +442,6 @@ html {
     height: auto;
     max-height: max-content;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .contNustraP {
@@ -494,6 +471,8 @@ html {
     grid-area: boxNuestraP4;
 }
 
+/* ////// PROYECION CARDS ////////// */
+
 .proyeccionGrid {
     opacity: 0;
     transform: translateY(-100px);
@@ -509,7 +488,6 @@ html {
     opacity: 1;
     transform: translateY(0);
 }
-
 
 .proyeccionTitulo {
     grid-area: proyeccionTitulo;
@@ -559,6 +537,7 @@ html {
     font-family: 'Florania Trial', sans-serif;
 }
 
+/* //////////ubibcacion contenedor////////// */
 .contUbicacion {
     width: 100%;
     height: auto;
@@ -573,7 +552,6 @@ html {
     opacity: 1;
     transform: translateY(0);
 }
-
 
 .devDecoracion1 {
     position: relative;
@@ -592,7 +570,6 @@ html {
     height: auto;
 }
 
-
 .contNuestraUbicacion {
     background-color: #006780;
     width: 100%;
@@ -605,7 +582,6 @@ html {
     overflow: hidden;
     justify-content: center;
 }
-
 
 .iconMapa {
     margin-top: 25px;
@@ -628,12 +604,17 @@ html {
 }
 
 .boxCajaMapa {
-    width: auto;
+    width: 97%;
     height: min-content;
     display: flex;
     gap: 2%;
     align-items: center;
     justify-content: center;
+}
+
+.tamMapaUbi{
+    width: 350px;
+    height: 250px;
 }
 
 .boxtextoMapa {
@@ -646,7 +627,6 @@ html {
     text-align: left;
     font-size: 2em;
     font-weight: 700;
-    font-family: sans-serif;
 }
 
 
@@ -660,19 +640,19 @@ html {
 }
 
 .cajaServicios {
-    width: 85%;
+    width: 70%;
     height: auto;
     display: flex;
     align-items: center;
     gap: 10px;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .boxTitulosServicios {
     width: 100%;
     height: auto;
     text-align: center;
-    gap: 10px;
     font-weight: 400;
     color: #173244;
     font-family: 'Florania Trial', sans-serif;
@@ -683,15 +663,17 @@ html {
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-    width: 100%;
-    height: auto;
+    width: auto;
+    max-width: 100%;
+    height: min-content;
     position: relative;
 }
 
 .textServicios {
     display: flex;
-    width: 45%;
+    width: auto;
     height: auto;
+    line-height: 20px;
     flex-direction: column;
     align-items: center;
 }
@@ -700,7 +682,7 @@ html {
     width: 30%;
     height: 2px;
     position: absolute;
-    bottom: 25%;
+    top:10%;
     right: 0;
     background-color: #00668086;
 }
@@ -711,80 +693,6 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-/* ////////////////CONNOVEDAESA U SERVICIOS/////////////////////// */
-.contNovedades {
-    width: 100%;
-    height: 100dvh;
-    display: grid;
-    align-content: center;
-    color: white;
-    justify-content: center;
-    grid-template: "headerNovedades headerNovedades headerNovedades" 15%
-        "multiNovedades empty-1 textNovedades" 60%/
-        42% 5% 42%;
-}
-
-.headerNovedades {
-    grid-area: headerNovedades;
-    background-color: #006780;
-    border-radius: 12px 12px 0 0;
-    display: grid;
-    align-items: center;
-    grid-template: "empty-1 tituloNovedades fechaNovedades" 100%/
-        1fr 2fr 1fr;
-}
-
-.tituloNovedades {
-    grid-area: tituloNovedades;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-weight: 700;
-    font-size: 25px;
-}
-
-.fechaNovedades {
-    grid-area: fechaNovedades;
-    align-items: center;
-    justify-content: right;
-    display: flex;
-    font-weight: 600;
-    font-size: 14px;
-    margin: 15px;
-}
-
-.multiNovedades {
-    grid-area: multiNovedades;
-    background-color: rgb(187, 186, 186);
-    display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    border-radius: 0 0 10px 10px;
-}
-
-.imgNovedades {
-    width: 100%;
-}
-
-.textNovedades {
-    display: flex;
-    background-color: rgb(187, 186, 186);
-    grid-area: textNovedades;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 0px 0px 10px 10px;
-}
-
-.boxTexto {
-    text-align: justify;
-    padding: 0px 15px 0px 15px;
 }
 
 .contPie {
@@ -915,7 +823,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
+    font-size: 1.7  em;
     line-height: 0;
     font-weight: 600;
     color: #0D1C26;
@@ -928,7 +836,6 @@ html {
     grid-template: "empty-7 boxMision boxVision empty-10" auto
         "empty-7 boxHistoria boxHistoria empty-10" auto/
         2% 1fr 1fr 2%;
-
 }
 
 .segTitNosotros,
@@ -945,7 +852,6 @@ html {
     height: auto;
     font-family: 'Florania Trial', sans-serif;
 }
-
 
 .boxMision {
     grid-area: boxMision;
@@ -1072,7 +978,6 @@ html {
     animation: fadeIn 1s ease-out forwards;
 }
 
-
 .boxContactenos {
     width: 100%;
     height: 100%;
@@ -1143,11 +1048,12 @@ html {
 }
 
 .redesSociales {
-    width: 200px;
+    width: 150px;
     height: 100%;
     align-items: center;
     justify-content: center;
     display: grid;
+    margin-left: 60px;
     grid-template: "redes1" 45px
         "redes2" 45px
         "redes3" 45px
@@ -1157,29 +1063,29 @@ html {
 
 .red {
     display: flex;
-    width: 100%;
-    height: max-content;
-    align-items: center;
+    width: auto;
+    height: min-content;
     list-style: none;
     text-decoration: none;
 }
 
 .contRed {
-    width: 100%;
+    width: auto;
     height: min-content;
     align-items: center;
     justify-content: center;
     display: flex;
-    flex-direction: row;
 }
 
 .contImgRed {
-    width: 50px;
+    width: auto;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
+    gap: 8px;
+    color: aliceblue;
 }
 
 .contImgRed.animate {
@@ -1194,14 +1100,9 @@ html {
 }
 
 .texRedes {
-    color: aliceblue;
     font-size: 1em;
     display: flex;
     margin: 0;
-}
-
-.texRedes:hover {
-    color: rgba(255, 255, 255, 0.411);
 }
 
 .contTxtRed {
@@ -1209,6 +1110,9 @@ html {
     height: 100%;
     display: flex;
     align-items: center;
+}
+.contImgRed:hover{
+    color: rgba(255, 255, 255, 0.411);
 }
 
 .redes1 {
@@ -1228,8 +1132,8 @@ html {
 }
 
 .boxImgRed:hover {
-    width: 35px;
-    height: 35px;
+    width: 33px;
+    height: 33px;
 }
 
 .imgRedes {
