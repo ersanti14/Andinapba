@@ -162,11 +162,9 @@ export const VistaInicial = () => {
           <DecTop />
         </div>
       </div>
-
       <div className="boxServicios" id="boxServicios">
         <Servicios />
       </div>
-      
     </>
   );
 };
