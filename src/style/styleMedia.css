@@ -158,6 +158,7 @@
         width: auto;
         height: 200px !important;
     }
+
 }
 
 @media screen and (min-width: 100px) and (max-width: 450px) {
@@ -410,4 +411,26 @@
         flex-direction: column;
         margin-bottom: 20px;
     }
+
+    
+    .boxNosotros {
+        justify-items: center;
+        display: grid;
+        gap: 10px;
+        grid-template: "boxMision"auto
+                        "boxVision" auto
+                     "boxHistoria" min-content/
+                         1fr;
+    } 
+
+    .boxHistoria {
+        background-color: red;
+        grid-area: boxHistoria;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 10px 0px 10px;
+    }
+    
 }

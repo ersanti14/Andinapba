@@ -1,6 +1,6 @@
 import React from "react";
 
-const IconRes = () => (
+export const IconRes = () => (
   <svg
     fill="none"
     height="90"

@@ -356,7 +356,9 @@ export const Menu = () => {
             </div>
           </div>
         </div>
-        <footer className="contPie"></footer>
+        <footer className="contPie">
+          
+        </footer>
       </div>
     </>
   );

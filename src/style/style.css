@@ -678,34 +678,27 @@ body {
     align-items: center;
 }
 
+.letraServicios{
+    font-family:'Florania Trial', sans-serif;
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
 .DecServicios {
     width: 30%;
     height: 2px;
     position: absolute;
-    top:10%;
+    top:25%;
     right: 0;
     background-color: #00668086;
 }
 
 .ImgServicios {
-    height: 150px;
+    height: auto;
     width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.contPie {
-    grid-area: contPie;
-    width: 100%;
-    height: 100%;
-    background-color: #0D1C26;
-}
-
-@font-face {
-    font-family: 'Rafflesia-Demo';
-    src: url('./fonts/Rafflesia-Demo.ttf');
-    font-weight: bold;
 }
 
 /* ///////////////////////css pag Vision/////////////////////*/
@@ -811,11 +804,11 @@ body {
 .contTitulo {
     width: 100%;
     height: 80px;
+    background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Florania Trial', sans-serif;
-
 }
 
 .tituloNosotros {
@@ -832,7 +825,7 @@ body {
 .boxNosotros {
     justify-items: center;
     display: grid;
-    gap: 4%;
+    gap: 3%;
     grid-template: "empty-7 boxMision boxVision empty-10" auto
         "empty-7 boxHistoria boxHistoria empty-10" auto/
         2% 1fr 1fr 2%;
@@ -841,7 +834,7 @@ body {
 .segTitNosotros,
 .terTitNosotros {
     margin: 0;
-    background-color: #e6f7ff00;
+    background-color: #0ca1e700;
     color: #006780;
     font-size: 1.8em;
     font-weight: 700;
@@ -958,7 +951,7 @@ body {
     align-items: center;
     grid-template: "empty-23 boxContactenos boxRedes empty-22" 100%/
         2fr 40% 35% 1fr;
-    background-color: #006780;
+    background-color: rgb(0, 103, 128);
 }
 
 @keyframes fadeIn {
@@ -1093,7 +1086,6 @@ body {
     transform: translateY(0);
 }
 
-
 .boxImgRed {
     width: 30px;
     height: 30px;
@@ -1140,3 +1132,14 @@ body {
     width: 100%;
     height: 100%;
 }
+
+/* ///////////BOX CONTENIDO PIE DE PAGINA//////////// */
+
+.contPie {
+    grid-area: contPie;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #0D1C26;
+}
+
